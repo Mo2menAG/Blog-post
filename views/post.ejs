@@ -1,0 +1,12 @@
+<%- include("partials/header"); -%>
+
+<% posts.forEach(function(post){ %>
+<%  if(post.title===postTitle){ %>
+  <h1> <%= post.title %>  </h1>
+  <p> <%= post.text %>  </p>
+
+<%  } }) %>
+
+
+
+<%- include("partials/footer"); -%>
